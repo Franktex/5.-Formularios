@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica 10</title>
+</head>
+<body>
+    <form action="https://httpbin.org/post" method="post">
+        <fieldset>
+            <legend>Datos personales</legend>
+            <input type="text" name="name" placeholder="Nombre">
+            <input type="text" name="surname" placeholder="Apellidos">
+            <input type="number" min="111111111" max="999999999" name="phonenumber" placeholder="Teléfono">           
+            <input type="text" name="adress" placeholder="Dirección">
+            <input type="email" name="email" placeholder="Email">
+        </fieldset>
+        <fieldset>
+            <legend>Seleccionar curso</legend>
+            Curso Front End <input type="checkbox" name="fronten"><br>
+            Curso de Java <input type="checkbox" name="java"><br>
+            Curso Full Stack <input type="checkbox" name="fullstack">
+        </fieldset>
+    </form>
+</body>
+</html>

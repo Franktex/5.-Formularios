@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica 11</title>
+</head>
+<body>
+    <form action="https://httpbin.org/post" method="post">
+        <fieldset>
+            <legend>Registro de usuarios</legend>
+            <!--Primero datos personales-->
+            <input type="text" name="name" placeholder="Nombre" required>
+            <input type="radio" name="gender" value="masculino">Masculino
+            <input type="radio" name="gender" value="femenino">Femenino
+            Fecha de nacimiento: <input type="date" name="birthdate"><br>
+            <!--Esto por otro lado-->
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="password" name="password" placeholder="Contraseña" required><br>
+            <!--Esto por otro lado-->
+            Número de asignaturas matriculadas: <input type="number" min="1" max="15">
+            Curso Matriculado: <select name="courses" id="courses">
+                <option value="Materia1">Materia1</option>
+                <option value="Materia2">Materia2</option>
+                <option value="Materia3">Materia3</option>
+                <option value="Materia4">Materia4</option>
+            </select><br>
+            <!--Y esto al final-->
+            He leído y acepto los términos y condiciones <input type="checkbox" name="tyc">
+            Mis datos son verídicos <input type="checkbox" name="tyc">
+            <input type="submit" name="send">
+        </fieldset>
+    </form>
+</body>
+</html>
